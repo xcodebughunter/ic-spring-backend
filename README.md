@@ -2,11 +2,11 @@
 
 Integrantes:
 
-NESTOR ANDRES MARTINEZ
-CRISTIAN CAMILO RODRIGUEZ
-Mateo Alvarez
-Jose Luis Duarte Mesa
-Alexander Fierro Angel
+- NESTOR ANDRES MARTINEZ
+- CRISTIAN CAMILO RODRIGUEZ
+- Mateo Alvarez
+- Jose Luis Duarte Mesa
+- Alexander Fierro Angel
 
 ## Prerequisites
 
