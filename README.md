@@ -2,7 +2,11 @@
 
 Integrantes:
 
-TBD
+NESTOR ANDRES MARTINEZ
+CRISTIAN CAMILO RODRIGUEZ
+Mateo Alvarez
+Jose Luis Duarte Mesa
+Alexander Fierro Angel
 
 ## Prerequisites
 
