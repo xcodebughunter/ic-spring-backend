@@ -17,16 +17,16 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag grupodos-spring-backend:latest
       
-    - name: Docker Login
-      uses: docker/login-action@v2.0.0
+    - name: Push To Registry
+      uses: redhat-actions/push-to-registry@v2.5.1
       with:
-        # Server address of Docker registry. If not set then will default to Docker Hub
+        # Name of the image/manifest to push (e.g. username/imagename or imagename)
+        image: grupodos-spring-backend
+        # Hostname and optional namespace to push the image to (eg. quay.io/username or quay.io)
         registry: grupodosregistry.azurecr.io
-        # Username used to log against the Docker registry
+        # Username to use as credential to authenticate to the registry
         username: grupodosregistry
-        # Password or personal access token used to log against the Docker registry
+        # Password to use as credential to authenticate to the registry
         password: QLHDH9On1KAe97Bt=ZesQRQ2aLC97oKD
-        # Specifies whether the given registry is ECR (auto, true or false)
-        ecr: auto
-        # Log out from the Docker registry at the end of a job
-        logout: true
+        # Verify TLS certificates when contacting the registry
+        tls-verify: true
