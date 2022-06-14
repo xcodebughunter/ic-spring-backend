@@ -8,9 +8,9 @@ pipeline {
 
                     echo 'Building..'
                     sh "ls -lha"
-                    sh "sudo docker build -t angular-front:lts ." 
+                    sh "sudo docker build -t spring-bck:lts ." 
                     sh "sudo docker images" 
-                    sh "sudo docker run -d -ti --name angular-front -p 80:80 angular-front:lts"
+                    sh "sudo docker run -d -ti --name spring-bck -p 8080:8080 spring-bck:lts"
 
                 }
             }
